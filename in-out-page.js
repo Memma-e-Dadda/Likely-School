@@ -1,6 +1,13 @@
 var elements_to_watch = document.querySelectorAll('.watch');
+var threshold = 0;
 
-const threshold = 0.8;
+const site = window.location.pathname;
+
+if(site == "/Index.html"){
+    threshold = 0.8;
+} else if(site == "/Team.html"){
+    threshold = 0.55;
+}
 
 var callback = function(items){
     items.forEach((item) => {
