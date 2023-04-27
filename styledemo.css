@@ -125,12 +125,19 @@ button:hover {
 }
 
 button img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
 }
 
 button h4 {
   font-size: 16px;
   font-weight: 800;
   margin-left: 25px;
+}
+
+.appstore{
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
 }
