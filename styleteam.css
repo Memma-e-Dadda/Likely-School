@@ -28,6 +28,7 @@ header ul {
   header ul li {
     padding: 5px 20px;
     margin: 20px;
+    ;
   }
   
   header ul li a {
@@ -46,11 +47,31 @@ header ul {
     padding-left: 50px;
   }
   
-.links{
-    padding-left: 350px;
-    
+  .links{
+ padding-left: 405px;
+  }
+
+
+  .Titolo{
+  font-size: 53px;
+  margin-top: 150px;
+  text-align: center;
 }
 
-.team {
-    width: 100%;
+  .linea{
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 25px;
+}
+
+.Box{
+  width: 340px;
+  height: 130px;
+  margin-left: 590px;
+  margin-top: 60px;
+
+  background: #f7f7f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 55px;
+
 }
