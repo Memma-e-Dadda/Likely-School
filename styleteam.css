@@ -77,6 +77,12 @@ section.out-page .content {
   transform: translateY(-20vh);
 }
 
+.relative {
+  position: relative;
+  margin-left: -2px;
+  transition: none;
+}
+
 .Titolo{
   font-size: 53px;
   margin-top: 300px;

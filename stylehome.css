@@ -215,3 +215,7 @@ section.out-page .content {
   color: gray;
   margin-top: 25px;
 }
+
+footer {
+  margin-top: 280vh;
+}

@@ -1,5 +1,5 @@
 var elements_to_watch = document.querySelectorAll('.watch');
-var threshold = 0;
+var threshold;
 
 const site = window.location.pathname;
 
