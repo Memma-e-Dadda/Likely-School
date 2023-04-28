@@ -207,7 +207,7 @@ h3 {
   width: 770px;
   height: 39px;
   margin-left: 385px;
-  margin-top: 45px;
+  margin-top: 65px;
 
   font-family: 'Inter';
   font-weight: 600;
@@ -274,5 +274,19 @@ h3 {
   text-align: center;
 
   color: #333333;
+
+}
+
+.ja{
+  width: 230px;
+  margin-top: 220px;
+  margin-left: 420px;
+}
+
+.fsts{
+  position: absolute;
+  width: 550px;
+  margin-top: 140px;
+  
 
 }
