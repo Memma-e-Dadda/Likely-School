@@ -3,7 +3,7 @@ var threshold;
 
 const site = window.location.pathname;
 
-if(site == "/Index.html"){
+if(site == "/"){
     threshold = 0.8;
 } else if(site == "/Team.html"){
     threshold = 0.55;
