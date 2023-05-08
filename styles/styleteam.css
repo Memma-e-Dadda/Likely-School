@@ -1,53 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
- 
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; 
-  font-family: 'Inter';
+  text-decoration: none;
+  font-family: "Inter";
 }
 
-header{
-    font-size: 20px;
-    padding-top: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+header {
+  font-size: 20px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-.logo{
+.logo {
   width: 93px;
   height: 90px;
 }
 
 header ul {
-    align-self: center;
-    list-style: none;
-  }
-  
-  header ul li {
-    padding: 5px 20px;
-    margin: 20px;
-    ;
-  }
-  
-  header ul li a {
-    color: rgb(5, 5, 5);
-    font-size: 23px;
-    font-weight: 700;
-  }
-  
-  header ul li a:hover {
-    color: rgb(184,186,188);
-  }
+  align-self: center;
+  list-style: none;
+}
 
-  .flex {
-    display: flex;
-    align-self: center;
-    padding-left: 50px;
-  }
-  
-.links{
+header ul li {
+  padding: 5px 20px;
+  margin: 20px;
+}
+
+header ul li a {
+  color: rgb(5, 5, 5);
+  font-size: 23px;
+  font-weight: 700;
+}
+
+header ul li a:hover {
+  color: rgb(184, 186, 188);
+}
+
+.flex {
+  display: flex;
+  align-self: center;
+  padding-left: 50px;
+}
+
+.links {
   padding-left: 405px;
 }
 
@@ -63,11 +62,11 @@ section {
   left: 0;
   opacity: 0;
   transform: translateY(20vh);
-  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   z-index: -1;
 }
 
-section.in-page .content{
+section.in-page .content {
   opacity: 1;
   transform: translateY(0vh);
 }
@@ -83,13 +82,13 @@ section.out-page .content {
   transition: none;
 }
 
-.Titolo{
+.Titolo {
   font-size: 53px;
   margin-top: 300px;
   text-align: center;
 }
 
-.linea{
+.linea {
   width: 500px;
   margin-left: 500px;
   margin-top: 25px;
@@ -97,13 +96,13 @@ section.out-page .content {
 
 .Box {
   width: 300px;
-  height: 115px;
-  margin-top: 20px;
+  height: 105px;
+  margin-top: 40px;
   display: flex;
 
   background: #f7f7f7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 55px;
+  border-radius: 50px;
 }
 
 .solo {
@@ -117,19 +116,23 @@ section.out-page .content {
 }
 
 .one .Box.left {
-  margin-left: 270px;
+  margin-left: 340px;
 }
 
 .one .Box.right {
-  margin-right: 270px;
+  margin-right: 340px;
+}
+
+.two .Box{
+  margin-top: 60px;
 }
 
 .two .Box.left {
-  margin-left: 100px;
+  margin-left: 270px;
 }
 
 .two .Box.right {
-  margin-right: 100px;
+  margin-right: 270px;
 }
 
 .three .Box.left {
@@ -148,16 +151,20 @@ section.out-page .content {
   margin-right: 380px;
 }
 
+.lastbox {
+  margin-top: 90px;
+}
+
 .logo-nobg {
   position: absolute;
   width: 250px;
 
   margin-left: 630px;
-  margin-top: 260px;
+  margin-top: 250px;
 }
 
 .Box img {
-  height: 105px;
+  height: 90px;
   margin: 6px;
 }
 
@@ -168,14 +175,14 @@ section.out-page .content {
 
 .Box.solo img {
   position: absolute;
-  margin-top: -60px;
-  margin-left: 95px;
+  margin-top: -50px;
+  margin-left: 105px;
 }
 
 .Box.solo .testo {
   text-align: center;
   padding-top: 30px;
-  padding-left: 60px;
+  width: 100%;
 }
 
 .Box.right .testo {
@@ -192,52 +199,50 @@ h2 {
 
 h3 {
   color: #878787;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.linea2{
+.linea2 {
   width: 110px;
   border: 1px solid #4d4c4c;
   margin-left: 710px;
   margin-top: 25px;
 }
 
-.bio{
-  width: 770px;
-  height: 39px;
-  margin-left: 385px;
+.bio {
+  text-align: center;
   margin-top: 65px;
 
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
-  font-size: 29px;
-  line-height: 42px;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
 
   color: #333333;
 }
 
-#special{
-  font-family: 'Inter';
+#special {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   line-height: 42px;
   text-align: center;
-  
-  background: linear-gradient(180deg, #7917DC 0%, #FB7930 61.66%);
+
+  background: linear-gradient(180deg, #7917dc 0%, #fb7930 61.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.bio2{
+.bio2 {
   width: 680px;
   height: 253px;
   margin-left: 420px;
   margin-top: 300px;
 
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 29px;
@@ -247,46 +252,41 @@ h3 {
   color: #333333;
 }
 
-.linea3{
+.linea3 {
   width: 800px;
   border: 1px solid #4d4c4c;
   margin-left: 370px;
   margin-top: 40px;
 }
 
-.titolo2{
+.titolo2 {
   font-size: 53px;
   margin-top: 80px;
   text-align: center;
 }
 
-.bio3{
+.bio3 {
   position: absolute;
   width: 750px;
   height: 253px;
   margin-left: 370px;
   margin-top: 51px;
 
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
   font-size: 29px;
   line-height: 42px;
   text-align: center;
 
   color: #333333;
-
 }
 
-.ja{
-  width: 230px;
-  margin-top: 220px;
-  margin-left: 420px;
+.partnerImages {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 210px;
 }
 
-.fsts{
-  position: absolute;
-  width: 550px;
-  margin-top: 140px;
-  
-
+.partnerimage {
+  height: 180px;
 }
