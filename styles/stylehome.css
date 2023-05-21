@@ -1,94 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
- 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none; 
-  font-family: 'Inter';
-}
-
-header{
-    font-size: 20px;
-    padding-top: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-  }
-
-.logo{
-  width: 93px;
-  height: 90px;
-}
-
-header ul {
-    align-self: center;
-    list-style: none;
-  }
-  
-  header ul li {
-    padding: 5px 20px;
-    margin: 20px;
-  }
-  
-  header ul li a {
-    color: rgb(5, 5, 5);
-    font-size: 23px;
-    font-weight: 700;
-  }
-  
-  header ul li a:hover {
-    color: rgb(184,186,188);
-  }
-
-  .flex {
-    display: flex;
-    align-self: center;
-    padding-left: 50px;
-  }
-  
-.links{
-  padding-left: 405px;
-    
-}
-
-/*@keyframes slideLeft{
-  from{
-    transform: translateX(-300px);
-  }
-
-  to{
-    transform: translateX(0);
-  }
-}
-*/
-
 section {
   width: 100%;
   height: 100vh;
-  position: absolute;
-}
-
-.due {
-  top: 80vh;
-}
-
-.tre {
-  top: 128vh;
-}
-
-.quattro {
-  top: 180vh;
 }
 
 .content {
-  display: flex;
+  width: 73%;
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: 90px;
+  margin-left: 5%;
   opacity: 0;
   transform: translateY(20vh);
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  z-index: -1;
 }
 
 section.in-page .content {
@@ -101,121 +25,78 @@ section.out-page .content {
   transform: translateY(-20vh);
 }
 
-.first {
-  top: 65px;
+.true-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.true-content.first {
+  top: 2.88%;
   z-index: 1;
 }
 
-.first.sticky {
-  position: sticky;
+.titolo {
+  color: black;
+  font-size: 3.3rem;
+  font-weight: 800;
 }
 
-.titolo{
-    color:black;
-    font-size: 49px;
-    font-weight: 800;
-    /*animation-name:slideLeft;
-    animation-duration: 0.9s ;
-    animation-timing-function: ease;
-    animation-delay: 0s ;
-    animation-iteration-count:1;
-    animation-direction: normal ;
-    animation-fill-mode: none;
-  */
-}
-
-.v1 {
-  margin-top: 120px;
-}
-
-.v2 {
-  margin-top: 150px;
-}
-
-.v3 {
-  margin-top: 90px;
-}
-
-.v4 {
-  margin-top: 150px;
-}
-
-/*.box{
-    position: absolute;
-    width: 320px;
-    height: 60px;
-    margin-top: 80px;
-    margin-left: 30px;
-    background: #000018;
-    border-radius: 40px;
-}
-*/
-
-.bio{
-    margin-top: 15px;
-    font-size: 24.5px;
-    font-weight: 600;
-}
-
-.bio2{
-  margin-top: 20px;
-  font-size: 24.5px;
+.bio {
+  margin-top: 3%;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-
-.linea{
-    width: 480px;
-    color: gray;
-    margin-top: 30px;
+.bio.long {
+  margin-top: 5%;
 }
 
 
-.button{
-    width: 187px;
-    height: 67px;
-    margin-top: 20px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.18);
-    border-radius: 29px;
-    color: black;
-    font-size: 21px;
-    font-weight: 600;
-    border: 0px;
-    cursor: pointer;
-
-    transition: transform 0.4s, background-color 0.2s, color 0.2s, ease-in-out 0.3s;
+.linea {
+  width: 100%;
+  color: gray;
+  margin-top: 6%;
 }
 
-.button:hover {
 
+button {
+  width: 9.74vw;
+  height: 3.49vw;
+  margin-top: 4%;
+
+  background: #FFFFFF;
+  box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.29);
+  border-radius: 1.51vw;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 0px;
+  cursor: pointer;
+
+  transition: transform 0.4s, background-color 0.2s, color 0.2s, ease-in-out 0.3s;
+}
+
+button:hover {
   transform: translateY(-1px);
   background-color: black;
   color: #FFFFFF;
-
 }
 
 .telefono {
   width: 240px;
-  margin-top: 138px;
-  margin-left: 935px;
-  position: absolute;
-}
-
-.content.first .telefono {
-  position: sticky;
-  margin-top: 75px;
-  margin-left: 450px;
-  top: 138px;
 }
 
 .linea2 {
-  width: 1400px;
   color: gray;
-  margin-top: 25px;
+  margin-top: 1.7%;
 }
 
-footer {
-  margin-top: 280vh;
+@media (max-width: 1536px) {
+
+  button {
+    font-size: 1.2rem;
+  }
+
 }

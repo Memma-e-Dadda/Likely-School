@@ -1,10 +1,10 @@
-var elements_to_watch = document.querySelectorAll('.watch');
+var elements_to_watch = document.querySelectorAll('section');
 var threshold;
 
 const site = window.location.pathname;
 
 if(site == "/"){
-    threshold = 0.8;
+    threshold = 0.6;
 } else if(site == "/Team.html"){
     threshold = 0.55;
 }

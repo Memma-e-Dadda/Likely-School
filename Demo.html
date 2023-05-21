@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./styles/styledemo.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likely School - Demo</title>
+    <link rel="icon" href="./assets/logo-nobg.png" type="image/png" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/styledemo.css" />
   </head>
   <body>
-    <header class="flex">
+    <header>
       <img class="logo" src="./assets/logo.png" alt="" />
   
-      <ul class="flex links">
+      <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="">Demo</a></li>
+        <li><a href="Demo.html">Demo</a></li>
         <li><a href="Team.html">Chi siamo?</a></li>
       </ul>
     </header>
     
     <main>
-      <div class="text">
-        <h1 class="titolo">
-          Likely School
-          <br>Demo
-        </h1>
-  
-        <hr class="linea">
-      
-        <p class="bio">
-          Essendo la nostra applicazione ancora 
-          <br>in via di sviluppo e non pubblicata 
-          <br>ufficialmente, qui potrai reperire il link 
-          <br>per installare la demo
-        </p>
-  
-        <hr class="linea">
-      </div>
+      <div class="content">
+        <div class="text">
+          <h1>
+            Likely School
+            <br>Demo
+          </h1>
+    
+          <hr>
+        
+          <p>
+            Essendo la nostra applicazione ancora 
+            <br>in via di sviluppo e non pubblicata 
+            <br>ufficialmente, qui potrai reperire il link 
+            <br>per installare la demo
+          </p>
+    
+          <hr>
+        </div>
 
-      <div class="download">
-        <h2>Scarica qui la demo</h2>
-        <h3>(versione attuale 1.07)</h3>
+        <div class="download">
+          <h2>Scarica qui la demo</h2>
+          <h3>(versione attuale 1.07)</h3>
 
-        <button onclick="location.href= 'https://www.apple.com/it/app-store/'" >
-          <img class="appstore" src="./assets/appstore.png" alt="" />
-          <h4>
-            Download
-            <br>App Store
-          </h4>
-        </button>
+          <button onclick="location.href= 'https://www.apple.com/it/app-store/'" >
+            <img src="./assets/appstore.png" alt="" />
+            <h4>
+              Download
+              <br>App Store
+            </h4>
+          </button>
 
-        <button onclick="location.href= 'https://play.google.com'" >
-          <img src="./assets/playstore.png" alt="" />
-          <h4>
-            Download
-            <br>Play Store
-          </h4>
-        </button>
+          <button onclick="location.href= 'https://play.google.com'" >
+            <img id="playstore" src="./assets/playstore.png" alt="" />
+            <h4>
+              Download
+              <br>Play Store
+            </h4>
+          </button>
+        </div>
       </div>
     </main>
 
     <footer>
-      <a class="contact" target="_blank" href="https://www.instagram.com/_.fromschool.toschool._/">
+      <a target="_blank" href="https://www.instagram.com/_.fromschool.toschool._/">
         <img src="./assets/ig.png" alt="" />
         <h5>_.fromschool.toschool._</h5>
       </a>
 
-      <a class="contact" target="_blank" href="https://gmail.com">
+      <!-- <a target="_blank" href="mailto:FromSchool.ToSchool.2023@gmail.com"> -->
+      <a target="_blank" href="https://mail.google.com/mail/?view=cm&to=FromSchool.ToSchool.2023@gmail.com">
         <img src="./assets/mail.png" alt="" />
         <h5>FromSchool.ToSchool.2023@gmail.com</h5>
       </a>
 
-      <hr class="linea-footer">
+      <hr>
 
-      <h6>&copy;2022 likelyschool.it</h6>
+      <h6>likelyschool.it</h6>
     </footer>
   </body>
 </html>
