@@ -38,3 +38,11 @@ header ul li a {
 header ul li a:hover {
   color: #b8babc;
 }
+
+@media (max-width: 1536px) {
+  
+  html {
+    font-size: 90%;
+  }
+
+}
