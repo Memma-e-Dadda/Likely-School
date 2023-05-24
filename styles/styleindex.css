@@ -4,11 +4,11 @@ section {
 }
 
 .content {
-  width: 73%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: 5%;
+  padding: 0 5%;
   opacity: 0;
   transform: translateY(20vh);
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
@@ -33,41 +33,53 @@ section.out-page .content {
 }
 
 .true-content.first {
-  top: 2.88%;
+  top: 3%;
   z-index: 1;
+}
+
+.text {
+  width: 45%;
+}
+
+.personalized {
+  width: 55%;
 }
 
 .titolo {
   color: black;
-  font-size: 3.3rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
 .bio {
-  margin-top: 3%;
-  font-size: 1.5rem;
+  width: 90%;
+  margin-top: 5%;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
-.bio.long {
-  margin-top: 5%;
+.bio.short {
+  margin-top: 3%;
+}
+
+.personalized .bio {
+  width: 75%;
 }
 
 .linea {
-  width: 100%;
   color: gray;
   margin-top: 6%;
 }
 
 button {
-  width: 190px;
-  height: 70px;
+  width: 220px;
+  height: 75px;
   margin-top: 4%;
   background-color: #FFFFFF;
   box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.29);
   border-radius: 29px;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   border: 0px;
   cursor: pointer;
@@ -82,6 +94,7 @@ button:hover {
 
 .telefono {
   width: 240px;
+  margin-right: 15%;
 }
 
 .linea2 {
@@ -91,8 +104,90 @@ button:hover {
 
 @media (max-width: 1536px) {
 
+  .true-content {
+    margin-top: 5%;
+  }
+
+  .true-content.first {
+    top: 9%;
+  }
+
+}
+
+@media (max-width: 1133px) {
+
   button {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+  }
+
+  .telefono {
+    margin-right: 8%;
+  }
+
+  .ipad {
+    width: 60%;
+  }
+
+  .true-content {
+    margin-top: 8%;
+  }
+
+  .true-content.first {
+    top: 6%;
+  }
+
+}
+
+@media (max-width: 390px) {
+
+  section {
+    height: fit-content;
+  }
+
+  .true-content {
+    display: block;
+  }
+
+  .content {
+    position: static;
+    opacity: 1;
+    transform: none;
+    transition: none;
+    z-index: 0;
+    text-align: center;
+  }
+
+  .text,
+  .titolo,
+  .bio,
+  .personalized,
+  .personalized .bio {
+    width: 100%;
+  }
+
+  .linea {
+    width: 60%;
+    margin: 6% auto 0;
+  }
+
+  #first-phone {
+    display: none;
+  }
+
+  button {
+    width: 180px;
+    height: 60px;
+    border-radius: 25px;
+    margin-top: 7%;
+  }
+
+  .linea2 {
+    margin-top: 30%;
+  }
+
+  .telefono {
+    margin-right: 0;
+    margin-top: 15%;
   }
 
 }

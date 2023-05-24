@@ -166,3 +166,11 @@ section.out-page .content {
 .partnerImages img {
   height: 180px;
 }
+
+@media (max-width: 1133px) {
+  
+  .logo-nobg {
+    width: 200px;
+  }
+
+}

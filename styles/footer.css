@@ -31,3 +31,28 @@ footer h6 {
     font-size: 0.95rem;
     text-align: center;
 }
+
+@media (max-width: 390px) {
+
+    footer {
+        padding: 3% 0;
+        margin-top: 20%;
+    }
+
+    footer a {
+        margin-top: 2%;
+    }
+    
+    footer img {
+        width: 5vw;
+    }
+
+    footer hr {
+        margin: 3%;
+    }
+
+    footer h6 {
+        font-size: 0.8rem;
+    }
+
+}
