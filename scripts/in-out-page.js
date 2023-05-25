@@ -30,7 +30,7 @@ var callback = function (items) {
 
 var observer = new IntersectionObserver(callback, { threshold: threshold });
 
-if (window.innerWidth > 390) {
+if (window.innerWidth > 900) {
     elements_to_watch.forEach((element) => {
         observer.observe(element);
     });

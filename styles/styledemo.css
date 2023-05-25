@@ -82,7 +82,7 @@ button h4 {
   margin-left: 25px;
 }
 
-@media (max-width: 1133px) {
+@media screen and (max-width: 1200px) {
 
   .text {
     width: 50%;
@@ -94,9 +94,10 @@ button h4 {
 
 }
 
-@media (max-width: 390px) {
+@media screen and (max-width: 900px) {
 
   main {
+    min-height: 85.59vh;
     height: fit-content;
   }
 
@@ -116,7 +117,11 @@ button h4 {
   }
 
   .download {
-    margin-top: 20%;
+    margin-top: 10%;
+  }
+
+  footer {
+    margin-top: 0;
   }
 
 }

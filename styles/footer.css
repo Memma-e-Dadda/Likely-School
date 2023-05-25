@@ -32,23 +32,43 @@ footer h6 {
     text-align: center;
 }
 
-@media (max-width: 390px) {
-
+@media screen and (max-width: 900px) {
+    
     footer {
         padding: 3% 0;
         margin-top: 20%;
     }
-
+    
     footer a {
         margin-top: 2%;
     }
+
+    footer img {
+        width: 3vw;
+    }
+
+    footer h5 {
+        font-size: 1.3rem;
+    }
+
+    footer hr {
+        margin: 3% auto;
+    }
+
+    footer h6 {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
     
     footer img {
         width: 5vw;
     }
 
-    footer hr {
-        margin: 3%;
+    footer h5 {
+        font-size: 1.05rem;
     }
 
     footer h6 {

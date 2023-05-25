@@ -49,7 +49,7 @@ header nav .footer {
   display: none;
 }
 
-@media (max-width: 1536px) {
+@media screen and (max-width: 1600px) {
 
   html {
     font-size: 90%;
@@ -57,7 +57,7 @@ header nav .footer {
 
 }
 
-@media (max-width: 1133px) {
+@media screen and (max-width: 1200px) {
 
   html {
     font-size: 85%;
@@ -65,19 +65,19 @@ header nav .footer {
 
 }
 
-@media (max-width: 390px) {
+@media screen and (max-width: 900px) {
 
   html {
-    font-size: 70%;
+    font-size: 90%;
   }
 
   header {
     justify-content: space-between;
   }
 
-  nav {
+  header  nav {
     background-color: #ffffff;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -88,7 +88,7 @@ header nav .footer {
   header nav ul {
     display: block;
     margin-top: 30%;
-    margin-left: 16%;
+    padding-left: 16%;
   }
 
   header nav ul li {
@@ -102,6 +102,9 @@ header nav .footer {
 
   header nav .footer {
     display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
   }
 
   header nav .footer hr {
@@ -115,12 +118,6 @@ header nav .footer {
     font-size: 0.95rem;
     text-align: center;
     color: #454545;
-  }
-
-  header nav .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 3%;
   }
 
   header .nav-icon {
@@ -178,6 +175,14 @@ header nav .footer {
   header #nav-btn:checked~.nav-icon .icon::after {
     top: 0;
     transform: rotate(-45deg);
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: 70%;
   }
 
 }
